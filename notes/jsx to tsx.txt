@@ -1,0 +1,14 @@
+Conversion from jsx to tsx 
+1. npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+2. rename js/jsx to ts/tsx files
+3. npm install @babel/preset-typescript
+4. Add in .babelrc file 
+  "presets": ["@babel/preset-typescript", "@babel/preset-react", "@babel/preset-env"],
+
+
+app1: tsx and jsx mix
+home: jsx
+app2: tsx
+
+header.tsx and footer.tsx from app1 --> home : importing tsx in jsx
+JSXContent.jsx from app1 --> app2: importing jsx in tsx
